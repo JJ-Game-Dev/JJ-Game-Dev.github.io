@@ -4,8 +4,12 @@
         <style>
             body {
                 font-family: "Courier New", Courier, monospace;
-                background-color: #1f0e1c;
+                background-color: #3e2137;
                 color: #f5edba;
+            }
+
+            p {
+                padding: 8px, 16px;
             }
 
             h1 {
@@ -32,10 +36,30 @@
                 align-items: flex-start;
                 align-content: flex-start;
             }
+
+            .container-image {
+                margin: 8px;
+            }
+
+            .container-text{
+                flex: 1.2;
+                min-width: 50%;
+                max-width: 32px;
+                margin: 0px, 16px;
+            }
             
             div {
+                background-color: #1f0e1c;
                 width: 80%;
-                margin:auto;
+                margin: auto;
+                padding: 32px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+            }
+
+            section {
+                padding-top: 8px;
+                padding-bottom: 8px;
             }
 
             a:link {
@@ -69,33 +93,86 @@
 
         <!-- Main Content -->
         <main id="main-content">
-            <!-- Introduction -->
-            <div id="introduction" style="text-align:center;">
-                <h2>Howdy! Let me introduce myself.</h2>
-                <p>
-                    I'm JJ, video game developer. I've been programming and
-                    developing games since middle school (age 12), and I've been publishing
-                    indie games from age 15.
-                </p>
+            <div>
+                <!-- Introduction -->
+                <section id="introduction">
+                    <h2>Howdy! Let me introduce myself.</h2>
+                    <div style="text-align: center;">
+                        <p>
+                            I'm JJ, video game developer. I've been programming and developing
+                            games since middle school (age 12), and I've been publishing indie
+                            games since age 15.<br>
+                            [It's been a little bit of an obsession.]<br>
+                            <br>
+                            As I make games, I enjoy <br>
+                            designing and implementing novel mechanics, <br>
+                            making striking, dynamic, aesthetic, and interactive visuals, <br>
+                            and bringing disparate ideas together as a cohesive whole. <br>
+                            <br>
+                            My favorite kinds of games have a strong [optionally: unique] core
+                            that echoes in every part of the game and gives it a strong identity.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- About My Games -->
+                <h1 id="about-my-games">I Make Games.</h1>
+
+                <!-- Solor Work -->
+                <section id="solo-work">
+                    <h2>Sometimes, I make the whole thing.</h2>
+                    <div style="text-align: center;">
+                        <p>
+
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Eyes of the Deep -->
+                <section id="eyes-of-the-deep" class="container">
+                    <iframe class="container-image" frameborder="0" src="https://itch.io/embed/3041355?bg_color=000000&amp;fg_color=c6e4ff&amp;link_color=00ffea&amp;border_color=3e306c" width="208" height="167"><a href="https://hotnoggin.itch.io/eyes-of-the-deep">Eyes of the Deep by Hot Noggin Studios</a></iframe>
+                    <p class="container-text">
+                        Oh yes this is Eyes of the Deep, another little game.
+                    </p>
+                </section>
+
+                <!-- Blood of the Altar -->
+                <section id="blood-of-the-altar" class="container">
+                    <iframe class="container-image" frameborder="0" src="https://itch.io/embed/2644700?bg_color=200313&amp;fg_color=e9e0aa&amp;link_color=f81212&amp;border_color=503343" width="208" height="167"><a href="https://hotnoggin.itch.io/altar">Blood of the Altar by Hot Noggin Studios</a></iframe>
+                    <p class="container-text">
+                        Play Blood of the Altar, test test test.
+                    </p>
+                </section>
+
+                <!-- Hookshot Robot -->
+                <section id="hookshot-robot" class="container">
+                    <iframe class="container-image" frameborder="0" src="https://itch.io/embed/2893153?bg_color=211755&amp;fg_color=35a2d0&amp;link_color=fff35a&amp;border_color=38315d" width="208" height="167"><a href="https://hotnoggin.itch.io/gmtk-2024">🤖 Hookshot Robot 🤖 by Hot Noggin Studios, TheNetherPug, ZAFT</a></iframe>
+                    <p class="container-text">
+                        HOOKSHOT ROBOT!!!
+                    </p>
+                </section>
+
+                <!-- XOrbit -->
+                <section id="xorbit" class="container">
+                    <iframe class="container-image" frameborder="0" src="https://itch.io/embed/2888282?bg_color=42063d&amp;fg_color=ffebf2&amp;link_color=ff3f95&amp;border_color=463150" width="208" height="167"><a href="https://zafteer.itch.io/djam8-orbital-decay">👨‍🚀🚀🪐 XOrbit by ZAFT, Hot Noggin Studios, TheNetherPug</a></iframe>
+                    <p class="container-text">
+                        XORBIT!!!
+                    </p>
+                </section>
             </div>
         </main>
 
         <!-- Footer -->
-        <div>
         <footer style = "text-align: center; background-color: #3e2137;">
-            <p style="margin-top: 20px; margin-bottom: 20px;">
-                :3
-                <br>
-                Site content and design (c) 2024 - Present Hot Noggin Studios.
-                <br>
-                <a href="https://lospec.com/palette-list/na16">NA16</a>
-                color palette by Nauris on Lospec.
-                <br>
-                This is a footer, and you are awesome.
-                <br>
-            </p>
-        </footer>
-        </div>
+                <p>
+                    :3<br>
+                    Site content and design (c) 2024 - Present Hot Noggin Studios.<br>
+                    <a href="https://lospec.com/palette-list/na16">NA16</a>
+                    color palette by Nauris on Lospec.<br>
+                    This is a footer, and you are awesome.<br>
+                    <a href="#header">Back to top</a>
+                </p>
+        </footer> 
+    
     </body>
-
 </html>
