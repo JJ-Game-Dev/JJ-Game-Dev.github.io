@@ -39,13 +39,20 @@
 
             .container-image {
                 margin: 8px;
+                align-self: start;
             }
 
             .container-text{
-                flex: 1.2;
-                min-width: 60%;
-                max-width: 32px;
+                flex-basis: 200px;
+                flex-grow: 6;
+                min-width: 100px;
                 margin: 0px, 16px;
+            }
+
+            .base{
+                min-width: 400px;
+                max-width: 90vw;
+                width: 60%;
             }
             
             div {
@@ -87,21 +94,31 @@
 
     <body>
         <!-- Header -->
-        <div id="header" style="text-align:center;">
+        <div id="header" style="text-align:center;" class="base">
             <img src="images/banner.png" alt="Welcome to my portfolio site. This is a banner."
             width="100%">
             <h1>JJ, Game Dev.</h1>
         </div>
 
+        <div id="contact-info" style="text-align:center;" class="base">
+            <p>
+                📞 <a href="tel:2104468386">(210) 446-8386</a><br>
+                ✉️ <a href="mailto:portfolio@jjgame.dev">portfolio@jjgame.dev</a><br>
+                🦋 <a href="https://hotnoggin.bsky.social">hotnoggin.bsky.social</a><br>
+                📺 <a href="https://youtube.com/@hotnogginstudios">
+                    youtube.com/@hotnogginstudios</a><br>
+            </p>
+        </div>
+
         <!-- Main Content -->
         <main id="main-content">
-            <div>
+            <div class="base">
                 <!-- Introduction -->
                 <section id="introduction">
                     <h2>Howdy! Let me introduce myself.</h2>
                     <div style="text-align: center;">
                         <p>
-                            <b>I'm JJ, video game developer</b>.
+                            <b>I'm JJ, video game developer</b> [Age: 16].<br>
                             I've been programming and developing
                             games since middle school (age 12), and I've been publishing indie
                             games since age 15.<br>
@@ -114,7 +131,7 @@
                             <br>
                             My <b>favorite kind of game</b> has a strong
                             [optionally: unique] core that defines every part of the game
-                            and gives it a strong identity.
+                            and gives it a strong identity.<br>
                         </p>
                     </div>
                 </section>
@@ -146,7 +163,7 @@
                         blocks in a certain order determined by the specific rules of each block.
                         In testing, players discovered and understood these rules.<br>
                         <br>
-                        [Level design, ]
+                        [Level design, Tutorialization]
                         <br>
                         [December 2024]
                     </p>
@@ -156,7 +173,9 @@
                 <section id="blood-of-the-altar" class="container">
                     <iframe class="container-image" frameborder="0" src="https://itch.io/embed/2644700?bg_color=200313&amp;fg_color=e9e0aa&amp;link_color=f81212&amp;border_color=503343" width="208" height="167"><a href="https://hotnoggin.itch.io/altar">Blood of the Altar by Hot Noggin Studios</a></iframe>
                     <p class="container-text">
-                        Play Blood of the Altar, test test test.
+                        <b>Blood of the Altar</b> is a fast-paced arcade game where you sacrifice
+                        the bones of your slain enemies for advantage [A bit gruesome, I know]. It
+                        was created for Ludum Dare 55.
                     </p>
                 </section>
                 
