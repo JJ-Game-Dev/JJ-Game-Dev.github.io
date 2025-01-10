@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             body {
                 font-family: "Courier New", Courier, monospace;
@@ -49,12 +50,35 @@
                 margin: 0px, 16px;
             }
 
+            .showcase-link{
+                margin: 8px;
+                align-self: start;
+                flex-basis: 200px;
+                flex-grow: 6;
+                min-width: 80px;
+                max-width: 100%;
+                text-align: center;
+            }
+            
+            .showcase-image{
+                width: 100%;
+            }
+
             .base{
                 min-width: 400px;
                 max-width: 90vw;
                 width: 60%;
             }
             
+            .separator{
+                text-align: center;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                background-color: #3e2137;
+                color: #3e2137;
+                accent-color: #3e2137;
+            }
+
             div {
                 background-color: #1f0e1c;
                 width: 80%;
@@ -110,6 +134,8 @@
             </p>
         </div>
 
+        <div class="base" style="text-align: center;"><p aria-hidden="true">---</p></div>
+
         <!-- Main Content -->
         <main id="main-content">
             <div class="base">
@@ -153,21 +179,33 @@
                     </div>
                 </section>
 
+                <div style="text-align: center;"><p aria-hidden="true">---</p></div>
+
                 <!-- Eyes of the Deep -->
                 <section id="eyes-of-the-deep" class="container">
                     <iframe class="container-image" frameborder="0" src="https://itch.io/embed/3041355?bg_color=000000&amp;fg_color=c6e4ff&amp;link_color=00ffea&amp;border_color=3e306c" width="208" height="167"><a href="https://hotnoggin.itch.io/eyes-of-the-deep">Eyes of the Deep by Hot Noggin Studios</a></iframe>
                     <p class="container-text">
-                        <b>Eyes of the Deep</b> is an esoteric undersea puzzle game. The rules of
-                        the game are taught to the player through subtle guidance [and occasional
-                        environmental hints]. To open doors, the player must activate puzzle
-                        blocks in a certain order determined by the specific rules of each block.
-                        In testing, players discovered and understood these rules.<br>
+                        <b>Eyes of the Deep</b> is an esoteric undersea puzzle game. I developed
+                        rules for the puzzles that would normally need to be communicated through
+                        language or a standard tutorial. I instead made it the objective of the
+                        game for the players to discover these rules for themselves. <br>
                         <br>
-                        [Level design, Tutorialization]
-                        <br>
+                        [Level design, Tutorialization]<br>
                         [December 2024]
                     </p>
                 </section>
+                <section class="container">
+                    <a class="showcase-link" href="images/eyes_of_the_deep_0.png">
+                        <img class="showcase-image" src="images/eyes_of_the_deep_0.png"
+                        alt="The player encounters a new puzzle block.">
+                    </a>
+                    <a class="showcase-link" href="images/eyes_of_the_deep_1.png">
+                        <img class="showcase-image" src="images/eyes_of_the_deep_1.png"
+                        alt="A puzzle completed.">
+                    </a>
+                </section>
+
+                <div style="text-align: center;"><p aria-hidden="true">---</p></div>
 
                 <!-- Blood of the Altar -->
                 <section id="blood-of-the-altar" class="container">
@@ -175,10 +213,28 @@
                     <p class="container-text">
                         <b>Blood of the Altar</b> is a fast-paced arcade game where you sacrifice
                         the bones of your slain enemies for advantage [A bit gruesome, I know]. It
-                        was created for Ludum Dare 55.
+                        was created for Ludum Dare 55. During the 48-hour jam period, I focused on
+                        creating satisfying visual feedback and a strong core gameplay loop.
+                        This was my very first solo jam game!
+                        [Warning: Loud sounds] <br>
+                        <br>
+                        [Visual effects, Balancing]<br>
+                        [April 2024]
                     </p>
                 </section>
+                <section class="container">
+                    <a class="showcase-link" href="images/blood_of_the_altar_2.png">
+                        <img class="showcase-image" src="images/blood_of_the_altar_2.png"
+                        alt="The player grabs a bone as enemies swarm the altar.">
+                    </a>
+                    <a class="showcase-link" href="images/blood_of_the_altar_1.png">
+                        <img class="showcase-image" src="images/blood_of_the_altar_1.png"
+                        alt="The player and altar erupt in explosions of blood.">
+                    </a>
+                </section>
                 
+                <div style="text-align: center;"><p aria-hidden="true">---</p></div>
+
                 <!-- Collaborations -->
                 <section id="collaborative-work">
                     <h2>It's dangerous to go alone!</h2>
