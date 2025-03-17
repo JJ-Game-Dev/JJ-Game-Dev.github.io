@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'NFCode-Regular';
+    src:  url(font/NFCode-Regular.ttf);
+}
+
+body {
+    padding: 25px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-family: 'NFCode-Regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+div {
+    min-width: 400px;
+    max-width: 80vw;
+    margin: auto;
+    width: 90%;
+}
+
+button {
+    background-color: #48c3ff;
+    color: white;
+    border-width: 0px;
+    border-radius: 2px;
+    padding: 8px;
+}
+
+button:hover {
+    background-color: #2b76df;
+}
+
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+li {
+    padding-left: 1ch;
+    text-indent: 1ch;
+}
+
+li:before {
+    content: ">";
+    padding-right: 5px;
+}
+
+.headerlink {
+    color: white;
+}
+
+p {
+    line-height: 24px;
+}
+
+pre {
+    font-family: 'Courier New', Courier, monospace;
+
+    display:block;
+    break-inside: avoid;
+    padding: 16px;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 24px;
+
+    border-width: 2px;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: #48c3ff;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-color: #2b76df #48c3ff;
+    scrollbar-width: thin;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    
+    border-radius: 2px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #48c3ff;
+    padding-inline: 4px;
+    margin-inline: 2px;
+    white-space: nowrap;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+a {
+    color: #48c3ff;
+}
+
+a:hover {
+    color: #2b76df;
+}
